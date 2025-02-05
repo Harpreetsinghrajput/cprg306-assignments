@@ -11,7 +11,9 @@ export default function Page() {
           <li>
             <Link href="/week-3">
               <span className="text-blue-400 hover:underline">Go to Week 3 Assignment</span>
-            </Link>
+            </Link> 
+
+            
           </li>
         </ul>
       </div>
