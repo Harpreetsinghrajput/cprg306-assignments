@@ -21,6 +21,12 @@ export default function Home() {
 </Link>
  
           </h1>
+          <h1>Week 5:{''}
+<Link href="http://localhost:3000/week-5" target="_blank" rel="noopener noreferrer"style={{ color: 'green' }}>
+          Click Here
+</Link>
+ 
+          </h1>
           
 </main>
   );
