@@ -69,7 +69,7 @@ export default function NewItem() {
             onChange={(e) => setCategory(e.target.value)}
             className="w-full p-2 border rounded-md"
           >
-            {["Produce", "Dairy", "Bakery", "Meat", "Frozen Foods", "Canned Goods", 
+            {["Produce", "Dairy", "Bakery foods", "Meat", "Frozen Foods", "Canned Goods", 
               "Dry Goods", "Beverages", "Snacks", "Household", "Other"].map((cat) => (
               <option key={cat} value={cat.toLowerCase()}>{cat}</option>
             ))}
