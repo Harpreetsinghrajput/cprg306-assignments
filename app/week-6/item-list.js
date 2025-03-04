@@ -6,25 +6,26 @@ import items from "./items.json";
 
 export default function ItemList() {
   const [sortBy, setSortBy] = useState("name");
-  const [sortedItems, setSortedItems] = useState(items);
+  const [sortedItems, setSortedItems] = useState([...items]); 
 
   const sortByName = () => {
-    const newItems = items.toSorted((item1, item2) => {
+    const newItems = [...items].toSorted((item1, item2) => {
       if (item1.name > item2.name) return 1;
       else if (item1.name === item2.name) return 0;
       else return -1;
     });
     setSortedItems(newItems);
+    setSortBy("name");  
   };
 
   const sortByCategory = () => {
-    const newItems = items.toSorted((item1, item2) => {
-
+    const newItems = [...items].toSorted((item1, item2) => {
       if (item1.category > item2.category) return 1;
       else if (item1.category === item2.category) return 0;
       else return -1;
     });
     setSortedItems(newItems);
+    setSortBy("category");  
   };
 
   return (
